@@ -1,8 +1,6 @@
-/scrape_qoutes/database.py
 /scrape_qoutes/spiders/__pycache__
 /scrape_qoutes/spiders/__pycache__
-/scrape_qoutes/spiders/quotes_spider.py
-/scrape_qoutes/temp.py
+
 
 # Byte-compiled / optimized / DLL files
 /scrape_qoutes/__pycache__
