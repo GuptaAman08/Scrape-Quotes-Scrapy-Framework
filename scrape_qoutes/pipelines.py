@@ -47,3 +47,14 @@ class ScrapeQoutesPipeline(object):
         # print(item["title"])
         return item
 
+
+# Use Below code for storing in mongoDB
+class ScrapeQuotes(object):
+    def __init__(self):
+        self.conn = MongoClient("mongodb://localhost:27017/")
+        self.db = self.conn["qoutesDB"]
+        self.collection = self.db["qoutes_table"]
+
+    def process_item(self, item, spider):
+        self.collection.insert(dict(item))
+        return item
