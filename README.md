@@ -1,5 +1,5 @@
 # Scrapy_Framework
-In this repository, I have created a scrapy project, to extract quotes from a quotes.com website and stored it in both sqliteDB and MongoDB Database.
+Over Here, we scrape books from an amazon page that too using two spiders and running those spiders from a pyhon script file. Also. we change config file to download images and save into target folder.
 
 ##### Defined the fields/Items to be fetched from pages scraped in items.py file (More of like field definition in DJango Projects)
 
