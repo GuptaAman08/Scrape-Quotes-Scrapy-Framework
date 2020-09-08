@@ -5,15 +5,13 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
 
-# Temporary containers (items) for extracted data
-# Extracted data => temporary containers (items) => Store as Json/Csv/Xml
-
 import scrapy
 
 
-class ScrapeQoutesItem(scrapy.Item):
+class ScrapeAzBooksItem(scrapy.Item):
     # define the fields for your item here like:
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
     title = scrapy.Field()
     author = scrapy.Field()
-    tag = scrapy.Field()
-    
+    price = scrapy.Field()
